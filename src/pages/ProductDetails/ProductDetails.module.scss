@@ -1,0 +1,285 @@
+.container {
+  // background: #f8f8f8;
+  width: 80%;
+  margin: 0 auto;
+  .body {
+    // margin-bottom: 100px;
+    .cards {
+      margin: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      .col60 {
+        display: flex;
+        // align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        grid-gap: 50px;
+        width: 60%;
+      }
+      .col37 {
+        display: flex;
+        // align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        grid-gap: 50px;
+        width: 38%;
+      }
+      .secondCover {
+        display: none;
+      }
+      .aboutDesigner {
+        .imgbox {
+          display: flex;
+          grid-gap: 10px;
+          align-items: center;
+          margin: 30px 0;
+          img {
+            width: 70px;
+          }
+        }
+      }
+      .details {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+        justify-content: space-between;
+        .row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          grid-gap: 50px;
+          .col,
+          .col100 {
+            display: flex;
+            flex-direction: column;
+          }
+          .col {
+            width: 50%;
+            h3 {
+              font-family: Futura BdCn BT;
+            }
+          }
+          .col100 {
+            width: 100%;
+            .boxes {
+              // display: flex;
+              // justify-content: flex-start;
+              // flex-wrap: wrap;
+              grid-gap: 20px;
+              display: grid;
+              grid-template-columns: auto auto auto auto;
+              align-items: center;
+              margin: 10px 0;
+              width: 100%;
+              .span {
+                cursor: pointer;
+                border: 1px solid rgba(151, 151, 151, 0.14);
+                box-sizing: border-box;
+                border-radius: 4px;
+                // padding: 10px 25px;
+                height: 40px;
+                // width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Futura BdCn BT;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 17px;
+                line-height: 24px;
+                /* identical to box height, or 133% */
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                color: #131212;
+              }
+            }
+          }
+        }
+      }
+      .buyFrom {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+        justify-content: space-between;
+        .network {
+          background: #ffffff;
+          border: 1px solid #d5dde3;
+          box-sizing: border-box;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 60px;
+          padding: 15px 15px;
+          cursor: pointer;
+          &:hover {
+            background-color: #d5dde3;
+          }
+          .left,
+          .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 10px;
+            .cart {
+              background: #000000;
+              border-radius: 2px;
+              padding: 10px;
+              img {
+                // width: 25px;
+              }
+            }
+          }
+        }
+      }
+      .poster {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    .body {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    .body {
+      width: 90%;
+      .card {
+        .buyFrom {
+          .network {
+            .left {
+              img {
+                &:nth-of-type(2) {
+                  width: 50px;
+                }
+              }
+            }
+            .right {
+              .cart {
+                padding: 3px !important;
+              }
+              span {
+                font-size: 18px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .container {
+    .body {
+      width: 80%;
+      .cards {
+        flex-direction: column-reverse;
+        .col60 {
+          width: 100%;
+          .card {
+            .buyFrom {
+              .network {
+                .left {
+                  img {
+                    &:nth-of-type(2) {
+                      width: 50px;
+                    }
+                  }
+                }
+                .right {
+                  .cart {
+                    padding: 3px !important;
+                  }
+                  span {
+                    font-size: 18px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .col37 {
+          margin: 50px 0;
+          width: 100%;
+          .poster {
+            display: none;
+          }
+        }
+        .firstCover {
+          display: none;
+        }
+        .secondCover {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 473px) {
+  .container {
+    width: 98%;
+    .body {
+      width: 100%;
+      .cards {
+        flex-direction: column-reverse;
+        .col60 {
+          width: 100%;
+        }
+        .card {
+          h1 {
+            font-size: 18px !important;
+          }
+          p {
+            font-size: 12px !important;
+          }
+          h3 {
+            font-size: 16px !important;
+          }
+          .buyFrom {
+            .network {
+              .left {
+                img {
+                  &:nth-of-type(2) {
+                    width: 50px;
+                  }
+                }
+              }
+              .right {
+                .cart {
+                  padding: 3px !important;
+                }
+                span {
+                  font-size: 18px !important;
+                }
+              }
+            }
+          }
+
+          .aboutDesigner {
+            .imgbox {
+              img {
+                width: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// @import '~mdb-ui-kit/css/mdb.min.css';
+
+body {
+  padding: 100px 0;
+}
+a,
+h2 {
+  text-decoration: none !important;
+  color: unset;
+}
+.parallax-card-layers {
+  border-radius: 10px !important;
+}
+.NavBarRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: 30px;
+  @media screen and (max-width: 764px) {
+    // flex-direction: column;
+    grid-gap: 10px;
+  }
+}
+.allproducts {
+  @media screen and (max-width: 764px) {
+    display: none;
+  }
+}
+.dropdown {
+  @media screen and (min-width: 764px) {
+    display: none;
+  }
+}
+.grow {
+  flex: 1;
+  @media screen and (max-width: 764px) {
+    display: none;
+  }
+}

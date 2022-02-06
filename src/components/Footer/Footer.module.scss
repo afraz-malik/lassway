@@ -1,0 +1,50 @@
+.container {
+  background: #000000;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  grid-gap: 50px;
+  /* Inside Auto Layout */
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+  }
+  .details {
+    width: 35%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    /* or 144% */
+    p {
+      margin: 0;
+    }
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    div {
+      img {
+        width: 250px;
+      }
+    }
+    .social {
+      img {
+        width: 30px;
+      }
+    }
+    .details {
+      width: 65%;
+    }
+  }
+}

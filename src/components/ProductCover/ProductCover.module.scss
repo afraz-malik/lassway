@@ -1,0 +1,118 @@
+.productCover {
+  .like {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    img {
+      width: 30px;
+      // filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+      //   brightness(95%) contrast(80%);
+    }
+  }
+  .cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    img {
+      // width: 350px;
+      height: 360px;
+      max-width: 100%;
+    }
+  }
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+    scroll-behavior: smooth;
+
+    .prev,
+    .next {
+      scroll-behavior: smooth;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100px;
+      width: 80px;
+      cursor: pointer;
+      margin-bottom: 15px;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      &:hover {
+        border: 1px solid rgba(216, 216, 216, 0.56);
+      }
+      h3 {
+        margin: 0;
+        font-family: Futura BdCn BT;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 24px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #131212;
+      }
+    }
+    .slides {
+      // overflow: hidden;
+      width: 60%;
+      ::-webkit-scrollbar {
+        width: 4px; /* width of vertical scrollbar */
+        // border: 1px solid #d5d5d5;
+      }
+      ul {
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        list-style-type: none;
+        grid-gap: 10px;
+        padding: 0;
+        margin: 0;
+        // width: 265px;
+        padding-bottom: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        li {
+          border: 1px solid rgba(216, 216, 216, 0.56);
+          box-sizing: border-box;
+          border-radius: 2px;
+          height: 100px;
+          width: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // cursor: pointer;
+          img {
+            padding: 30px 0;
+            // margin-left: 8px;
+            cursor: pointer;
+            width: 65px;
+            // height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 473px) {
+  .productCover {
+    .prev,
+    .next {
+      display: none !important;
+    }
+    .slides {
+      width: 100% !important;
+    }
+  }
+}

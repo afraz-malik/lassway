@@ -1,0 +1,40 @@
+.explore {
+  // display: flex;
+  h1 {
+    font-family: Futura BdCn BT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 120%;
+
+    text-transform: uppercase;
+
+    margin: 0;
+    color: #000000;
+  }
+  .cards {
+    grid-gap: 30px;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .explore {
+    .cards {
+      flex-direction: row;
+      overflow-x: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 473px) {
+  .explore {
+    .cards {
+      flex-direction: row;
+      overflow-x: auto;
+    }
+  }
+}
